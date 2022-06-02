@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://example.cypress.io",
+  "video": true,
+  "videosFolder": "reports/videos",
+  "screenshotsFolder": "reports/screenshots",
+  "chromeWebSecurity": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "reports",
+    "overwrite": false,
+    "html": true,
+    "json": true
+  }
+}

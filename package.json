@@ -1,0 +1,46 @@
+{
+  "name": "cypress-example",
+  "version": "1.0.0",
+  "description": "Example repo for E2E test automation with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint --ext *.js,*.jsx,*.ts,*.tsx",
+    "prettier": "prettier --write -- **/*.{js,json,md,prettierrc,ts}",
+    "test": "npx cypress run --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vit-ganich/cypress-example.git"
+  },
+  "keywords": [
+    "cypress",
+    "e2e"
+  ],
+  "author": "Vitali Hanich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vit-ganich/cypress-example/issues"
+  },
+  "homepage": "https://github.com/vit-ganich/cypress-example#readme",
+  "dependencies": {
+    "cypress": "^9.1.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/cypress-dotenv": "^2.0.0",
+    "@types/mochawesome": "^6.2.1",
+    "@types/node": "^14.18.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "cypress-dotenv": "^2.0.0",
+    "cypress-xpath": "^1.6.2",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  }
+}
