@@ -1,16 +1,16 @@
 {
   "name": "cypress-example",
   "version": "1.0.0",
-  "description": "Example repo for E2E test automation with Cypress",
+  "description": "E2E tests for localize.city web site",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint --ext *.js,*.jsx,*.ts,*.tsx",
     "prettier": "prettier --write -- **/*.{js,json,md,prettierrc,ts}",
-    "test": "npx cypress run --browser chrome"
+    "test": "npx cypress run --browser electron"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vit-ganich/cypress-example.git"
+    "url": "git+https://github.com/vit-ganich/localize-smoke-test"
   },
   "keywords": [
     "cypress",
@@ -19,11 +19,11 @@
   "author": "Vitali Hanich",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vit-ganich/cypress-example/issues"
+    "url": "https://github.com/vit-ganich/localize-smoke-test/issues"
   },
-  "homepage": "https://github.com/vit-ganich/cypress-example#readme",
+  "homepage": "https://github.com/vit-ganich/localize-smoke-test#readme",
   "dependencies": {
-    "cypress": "^9.1.1"
+    "cypress": "^9.7.0"
   },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.1",

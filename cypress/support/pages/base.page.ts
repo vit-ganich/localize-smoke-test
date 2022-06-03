@@ -2,17 +2,19 @@
  * Base class for page objects
  */
 abstract class BasePage {
-  url: string | undefined;
+  constructor(readonly url: string) {}
 
   /**
-   * Visit page url. Note: 'url' field must be initialized
+   * Visit page url. Note: 'url' field must be initialized in the constructor
    */
   visit() {
-    if (!this.url) {
-      throw new Error('visit: url id not defined');
-    }
     cy.visit(this.url);
   }
+
+  /**
+   * Wait for the page is loaded
+   */
+  abstract waitForLoad(): void;
 }
 
 export default BasePage;

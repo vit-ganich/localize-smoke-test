@@ -1,14 +1,17 @@
 {
-  "baseUrl": "https://example.cypress.io",
+  "baseUrl": "https://www.localize.city/nyc/for-rent",
   "video": true,
   "videosFolder": "reports/videos",
   "screenshotsFolder": "reports/screenshots",
-  "chromeWebSecurity": false,
+  "chromeWebSecurity": true,
   "reporter": "mochawesome",
   "reporterOptions": {
     "reportDir": "reports",
     "overwrite": false,
     "html": true,
     "json": true
-  }
+  },
+  "viewportWidth": 1366,
+  "viewportHeight": 768,
+  "watchForFileChanges": false
 }

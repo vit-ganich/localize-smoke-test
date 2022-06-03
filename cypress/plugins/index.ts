@@ -14,6 +14,17 @@ import dotenvPlugin from 'cypress-dotenv';
 
 // eslint-disable-next-line no-unused-vars
 export default (on: any, config: Cypress.PluginConfigOptions) => {
+  // Maximize the Cypress window
+  on('before:browser:launch', (browser: any = {}, launchOptions: any) => {
+    if (browser.family === 'chromium' && browser.name !== 'electron') {
+      launchOptions.args.push('--start-maximized');
+      return launchOptions;
+    }
+    if (browser.name === 'electron') {
+      launchOptions.preferences.maximized = true;
+      return launchOptions;
+    }
+  });
   config = dotenvPlugin(config);
   return config;
 };
