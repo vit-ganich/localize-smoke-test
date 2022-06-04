@@ -2,11 +2,6 @@ import newYorkNyPage from '../support/pages/new-york/new-york-ny.page';
 import getRandomInt from '../support/utils/getRandomInt';
 
 describe('Smoke test', () => {
-  before(() => {
-    cy.clearCookies();
-    cy.clearLocalStorage();
-  });
-
   // ISSUE: page does not work correctly in Chrome browser. Use Electron instead
   it('When I visit New York page', () => {
     newYorkNyPage.visit();

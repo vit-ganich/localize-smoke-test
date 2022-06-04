@@ -6,7 +6,7 @@ import { ListingOverviewPage } from './listing-overview-page';
 
 class NewYorkNyPage extends BasePage {
   constructor() {
-    super('/new-york-ny');
+    super('/for-rent/new-york-ny');
   }
 
   waitForLoad(): void {
