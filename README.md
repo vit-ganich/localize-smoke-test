@@ -4,7 +4,6 @@ Test repo for E2E test automation with Cypress and Typescript
 
 ### How to run tests locally
 - run `npm install`
-- rename `.env.example` to `.env`
 - run `npm run test` or `npx cypress open`
 
 ### Reporting
