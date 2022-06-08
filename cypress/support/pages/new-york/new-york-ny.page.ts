@@ -27,9 +27,7 @@ class NewYorkNyPage extends BasePage {
 
   // Search results
   resultsFound = new TextBox("[data-section-type='recentSort']>div");
-  listedCardsMain = new WebElement(
-    '[data-auto="ignore-section-0-block"] div[data-auto="listed-bulletin"]',
-  );
+  listedCardsMain = new WebElement('a[data-auto="listed-bulletin-clickable"]');
 
   /**
    * Perform search by the neiborhood
@@ -77,7 +75,7 @@ class NewYorkNyPage extends BasePage {
    */
   selectItemFromList(itemIndex: number) {
     // TODO: click has no effect
-    this.listedCardsMain.get().eq(itemIndex).click('top', { force: true });
+    this.listedCardsMain.get().eq(itemIndex).click('center', { force: true });
     return new ListingOverviewPage();
   }
 

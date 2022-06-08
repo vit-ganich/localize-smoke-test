@@ -18,7 +18,7 @@ describe('Smoke test', () => {
   });
 
   // ISSUE: Click on the listing card has no effect in Cypress window (even manually)
-  it.skip('When I navigate to random listing', () => {
+  it('When I navigate to random listing', () => {
     newYorkNyPage.getSearchResultsAmount().then((length) => {
       const randomIndex = getRandomInt(length);
 
